@@ -71,4 +71,22 @@ group :test do
   gem "webdrivers"
 end
 
-gem 'solidus', github: 'nebulab/solidus', branch: 'waiting-for-dev/install_solidus_starter_frontend'
+gem "solidus_auth_devise"
+gem "solidus_paypal_commerce_platform"
+
+gem "solidus_core", path: "/home/gsmendoza/.rbenv/versions/2.7.6/lib/ruby/gems/2.7.0/bundler/gems/solidus-f43a087edc82"
+gem "solidus_backend", path: "/home/gsmendoza/.rbenv/versions/2.7.6/lib/ruby/gems/2.7.0/bundler/gems/solidus-f43a087edc82"
+gem "solidus_api", path: "/home/gsmendoza/.rbenv/versions/2.7.6/lib/ruby/gems/2.7.0/bundler/gems/solidus-f43a087edc82"
+gem "solidus_sample", path: "/home/gsmendoza/.rbenv/versions/2.7.6/lib/ruby/gems/2.7.0/bundler/gems/solidus-f43a087edc82"
+gem "canonical-rails"
+gem "solidus_support"
+gem "truncate_html"
+gem "view_component", "~> 2.46"
+
+group :development, :test do
+  gem "rspec-rails"
+  gem "apparition", "~> 0.6.0", github: "twalpole/apparition"
+  gem "rails-controller-testing", "~> 1.0.5"
+  gem "rspec-activemodel-mocks", "~> 1.1.0"
+  gem "solidus_dev_support", "~> 2.5"
+end
