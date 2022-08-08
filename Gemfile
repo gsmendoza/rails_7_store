@@ -71,8 +71,14 @@ group :test do
   gem "webdrivers"
 end
 
-gem 'solidus', github: 'solidusio/solidus'
-gem "solidus_auth_devise"
+gem 'solidus',
+  github: 'gsmendoza/solidus',
+  branch: 'gsmendoza/eng-436-changing-the-locale-in-the-admin-login'
+
+gem "solidus_auth_devise",
+  github: 'gsmendoza/solidus_auth_devise',
+  branch: 'gsmendoza/eng-436-changing-the-locale-in-the-admin-login'
+
 gem "solidus_paypal_commerce_platform"
 
 gem 'solidus_i18n'

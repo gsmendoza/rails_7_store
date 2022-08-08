@@ -1,6 +1,7 @@
 GIT
-  remote: https://github.com/solidusio/solidus.git
-  revision: 30253731078c64de37e79ced77bc96175c8bcc81
+  remote: https://github.com/gsmendoza/solidus.git
+  revision: d18443f7d98a5f33ce2bc904bd0f94211850701c
+  branch: gsmendoza/eng-436-changing-the-locale-in-the-admin-login
   specs:
     solidus (3.2.0.alpha)
       solidus_api (= 3.2.0.alpha)
@@ -62,6 +63,18 @@ GIT
       truncate_html (~> 0.9, >= 0.9.2)
     solidus_sample (3.2.0.alpha)
       solidus_core (= 3.2.0.alpha)
+
+GIT
+  remote: https://github.com/gsmendoza/solidus_auth_devise.git
+  revision: 40d072127e0d1bc21dcb3402cb097deb5ee86352
+  branch: gsmendoza/eng-436-changing-the-locale-in-the-admin-login
+  specs:
+    solidus_auth_devise (2.5.4)
+      deface (~> 1.0)
+      devise (~> 4.1)
+      devise-encryptable (= 0.2.0)
+      solidus_core (>= 2.6, < 4)
+      solidus_support (~> 0.5)
 
 GEM
   remote: https://rubygems.org/
@@ -350,12 +363,6 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    solidus_auth_devise (2.5.4)
-      deface (~> 1.0)
-      devise (~> 4.1)
-      devise-encryptable (= 0.2.0)
-      solidus_core (>= 2.6, < 4)
-      solidus_support (~> 0.5)
     solidus_i18n (2.1.1)
       solidus_core (>= 1.1, < 4)
       solidus_support (~> 0.4)
@@ -434,7 +441,7 @@ DEPENDENCIES
   rails-i18n
   selenium-webdriver
   solidus!
-  solidus_auth_devise
+  solidus_auth_devise!
   solidus_i18n
   solidus_paypal_commerce_platform
   sprockets-rails
