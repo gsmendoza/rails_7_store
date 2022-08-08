@@ -72,3 +72,5 @@ group :test do
 end
 
 gem 'solidus', github: 'solidusio/solidus'
+gem "solidus_auth_devise"
+gem "solidus_paypal_commerce_platform"
