@@ -74,3 +74,7 @@ end
 gem 'solidus', github: 'solidusio/solidus'
 gem "solidus_auth_devise"
 gem "solidus_paypal_commerce_platform"
+
+gem 'solidus_i18n'
+gem 'rails-i18n'
+gem 'kaminari-i18n'
