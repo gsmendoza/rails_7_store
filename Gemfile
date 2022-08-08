@@ -70,3 +70,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'solidus', github: 'nebulab/solidus', branch: 'waiting-for-dev/install_solidus_starter_frontend'
