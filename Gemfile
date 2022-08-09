@@ -71,4 +71,10 @@ group :test do
   gem "webdrivers"
 end
 
-gem 'solidus', github: 'nebulab/solidus', branch: 'waiting-for-dev/install_solidus_starter_frontend'
+gem "solidus_auth_devise"
+gem "solidus_paypal_commerce_platform"
+
+gem "solidus_core", path: "/home/gsmendoza/.rbenv/versions/2.7.6/lib/ruby/gems/2.7.0/bundler/gems/solidus-f43a087edc82"
+gem "solidus_backend", path: "/home/gsmendoza/.rbenv/versions/2.7.6/lib/ruby/gems/2.7.0/bundler/gems/solidus-f43a087edc82"
+gem "solidus_api", path: "/home/gsmendoza/.rbenv/versions/2.7.6/lib/ruby/gems/2.7.0/bundler/gems/solidus-f43a087edc82"
+gem "solidus_sample", path: "/home/gsmendoza/.rbenv/versions/2.7.6/lib/ruby/gems/2.7.0/bundler/gems/solidus-f43a087edc82"
