@@ -15,3 +15,12 @@ SolidusPaypalBraintree::Gateway.new(
   preference_source: "braintree_credentials"
 ).save
 
+# https://github.com/solidusio/solidus_paypal_braintree#configure-payment-types
+Spree::Store.all.each do |store|
+  store.create_braintree_configuration(
+    credit_card: true,
+    paypal: true,
+    apple_pay: true,
+    venmo: true
+  )
+end
