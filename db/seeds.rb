@@ -8,3 +8,10 @@
 
 Spree::Core::Engine.load_seed if defined?(Spree::Core)
 Spree::Auth::Engine.load_seed if defined?(Spree::Auth)
+
+# https://github.com/solidusio/solidus_paypal_braintree#create-a-new-payment-method
+SolidusPaypalBraintree::Gateway.new(
+  name: "Braintree",
+  preference_source: "braintree_credentials"
+).save
+
